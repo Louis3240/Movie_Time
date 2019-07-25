@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Time</title>
+
+    <!-- 由於有用到awesomeFont的圖案，所以引用他的js -->
+    <script defer src="js/all.js"></script>
+
+    <!-- 引用jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap必須 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 連接自己的外觀CSS -->
+    <link rel="stylesheet" href="css/outlook.css">
+
+</head>
+
+<body>
+    <!-- 全省威秀影城隔週電影新場次公布於每週二晚間23:59 -->
+    <!-- (假設週二整天只能查到：週二 週三 週四) -->
+    <!-- 會開放未來一週(週三會查到：今天到下星期四)之場次 -->
+    <form>
+        <div class="form-group col-md-6">
+            <i class="fas fa-search-location"></i>
+            <select id="location-list" class="form-control"></select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <i class="fas fa-video"></i>
+            <select id="movie-list" class="form-control"></select>
+        </div>
+        <div class="form-group col-md-6">
+            <i class="fas fa-calendar-week"></i>
+            <select id="date-list" class="form-control"></select>
+        </div>
+    </form>
+
+    <!-- 把jQuery所寫成的function都丟到listFunction.js裡 -->
+    <script src="js/listFunction.js"></script>
+
+    <!-- bootstrap必須 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
